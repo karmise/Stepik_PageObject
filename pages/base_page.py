@@ -1,7 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
 
-link = "http://selenium1py.pythonanywhere.com/"
-
 
 class BasePage:
     def __init__(self, browser, url, timeout=10):
