@@ -14,4 +14,4 @@ class LoginPageLocators:
 class ProductPageLocators:
     ADD_TO_BASKET = (By.ID, "add_to_basket_form")
     PRODUCT_NAME = (By.TAG_NAME, "h1")
-    ADDED_TO_BASKET = (By.CSS_SELECTOR, ".alertinner .alert")
+    ADDED_TO_BASKET = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")

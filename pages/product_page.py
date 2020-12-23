@@ -12,4 +12,6 @@ class ProductPage(BasePage):
     def basket_should_be(self):
         product = self.browser.find_element(*ProductPageLocators.ADDED_TO_BASKET)
         product.text()
-        assert product == ProductPageLocators.PRODUCT_NAME
+        name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
+        name.text()
+        assert product == name
